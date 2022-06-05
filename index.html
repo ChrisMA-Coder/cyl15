@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<script>
+    function accionParaCuandoEllaDigaQueSi(){
+        alert('Eres todo de mi y te amo gracias mi amor por todo, intenta con el no');
+    }
+
+    function mueveElBoton(){
+        width = window.innerWidth;
+        height = window.innerHeight;
+
+        newWidth = (Math.random() * width);
+        newHeight = (Math.random() * height);
+
+        document.getElementById('btnNo').style.position = "absolute";
+        document.getElementById('btnNo').style.left = newWidth + "px";
+        document.getElementById('btnNo').style.top = newHeight + "px";
+        
+
+    }
+</script>
+<body>
+    <div class="container">
+        <h1>
+            Hola mi amor, espero estes bien , quiero pedirte perdon por como me estuve 
+            comportando estos ultimos dias, estuve incomodo y aqui te lo explicare mi bebé.
+        </h1>
+        <p>
+            Los primeros dias fue por la foto o bueno ahora me doy cuenta que fue mi culpa por hacerte sentir
+            desconfianza por lo que dije que las fotos me animaban y me enamoraban más lo cual no fue bueno,
+            luego cuando saliste con tania me incomode por lo que te veia en linea y creo que debo entender
+            que has salido, pero solo queria que al menos respondieras esperaba eso estaba aburrido creo que
+            debo distraerme en otras cosas por eso ayer no te respondia solo estaba resentido o con orgullo,
+            queria darte amor pero el orgullo no me dejaba si te extrañaba y aun te extraño, <b>te amo</b> y demasiado
+            mi amor <b>te amo y un monton cariño</b>, estoy orgulloso de ti por las fotos que me mandaste como ya te dije
+            sales feliz deberia incomodarme o me incomode por un rato me puse a pensar que estas feliz mientras estamos asi
+            pero luego lo entendi y creo que solo me importa que estes feliz mi amor <b>te amo</b>.
+        </p>
+        <div>
+            <h1>¿Me perdonas mi amor?</h1>
+            <input type="button" onclick="accionParaCuandoEllaDigaQueSi()" id="btnSi" value="Si" />
+            <input type="button" id="btnNo" onmouseover="mueveElBoton()" value="No" />
+            
+        </div>
+        <img src="chuec.png" width="200">
+    </div>
+</body>
+</html>
